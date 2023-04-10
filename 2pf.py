@@ -1,3 +1,5 @@
+# pair counts to corrrelation function
+
 import numpy as np
 import matplotlib.pyplot as plt
 
