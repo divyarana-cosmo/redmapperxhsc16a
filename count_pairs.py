@@ -86,8 +86,8 @@ def lens_select(Rmin, Rmax, Njacks=30, mirror=False):
     mpid  = mdat['id']  [flg]
 
     mzred = 0.0*mra    
-    midx  = np.searchsorted(pid, mpid)
-    mzred = pzred[midx] 
+    midx  = np.isin(pid, mpid)
+    mzred = pzred[midx==True] 
     mrsep = mrsep*(1.0 + mzred)
     mpra  = pra[midx]
     mpdec = pdec[midx]
