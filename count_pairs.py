@@ -180,7 +180,7 @@ def run_pipe(Omegam=0.315, rmin=0.2, rmax=2.0, nbins=10, outputfile = 'pairs.dat
     if use_srcrand:
         print "using source randoms"
         from glob import glob
-        sflist = np.sort(glob('./rand_*.dat'))
+        sflist = np.sort(glob('./hsc_randoms/rand_*.dat'))
     else:
         sflist = ['AEGIS', 'VVDS', 'WIDE12H', 'XMM', 'GAMA15H', 'GAMA09H', 'HECTOMAP']
 
